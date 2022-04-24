@@ -941,6 +941,14 @@ defmodule Phoenix.HTML.Form do
 
     content_tag(:button, value, opts)
   end
+  
+  
+  @doc """
+  Generates a datalist input
+  """
+  def datalist_input(form, field, opts \\ []) do
+    generic_input(:datalist, form, field, opts)
+  end
 
   @doc """
   Generates a reset input to reset all the form fields to
